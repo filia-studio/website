@@ -81,7 +81,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-slate-500">Email Us</p>
-                                    <p className="text-base font-semibold text-slate-900">hello@filiastudio.com</p>
+                                    <p className="text-base font-semibold text-slate-900">hello@withfillia.com</p>
                                 </div>
                             </Card>
 
@@ -91,7 +91,7 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-slate-500">Call Us</p>
-                                    <p className="text-base font-semibold text-slate-900">+1 (555) 123-4567</p>
+                                    <p className="text-base font-semibold text-slate-900">+234 903 512 2388</p>
                                 </div>
                             </Card>
 
@@ -101,22 +101,22 @@ export default function ContactPage() {
                                 </div>
                                 <div>
                                     <p className="text-sm font-medium text-slate-500">Visit Us</p>
-                                    <p className="text-base font-semibold text-slate-900">123 Tech Park, Innovation Way</p>
-                                    <p className="text-sm font-semibold text-slate-900">San Francisco, CA 94107</p>
+                                    <p className="text-base font-semibold text-slate-900">5 Balogun Close, Addo</p>
+                                    <p className="text-sm font-semibold text-slate-900">Ajah, Lagos</p>
                                 </div>
                             </Card>
                         </div>
 
                         {/* Social Links */}
                         <div className="flex gap-4">
-                            <Link href="#" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
+                            <Link href="/" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
                                 <Linkedin size={20} />
                             </Link>
-                            <Link href="#" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
+                            <Link href="/" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
                                 {/* X Icon placeholder using Twitter icon but styled */}
                                 <span className="font-bold text-lg">𝕏</span>
                             </Link>
-                            <Link href="#" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
+                            <Link href="https://github.com/filia-studio" className="h-10 w-10 rounded-full bg-white border border-slate-200 flex items-center justify-center text-slate-600 hover:text-white hover:bg-slate-900 transition-all shadow-sm">
                                 <Github size={20} />
                             </Link>
                         </div>

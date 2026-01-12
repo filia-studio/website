@@ -13,7 +13,7 @@ export function Footer() {
                         </div>
                         <span className="text-xl font-bold">Filia Studio</span>
                     </Link>
-                    <p className="text-sm">© 2023 Filia Studio. All rights reserved.</p>
+                    <p className="text-sm">&copy; {new Date().getFullYear()} Filia Studio. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -25,13 +25,13 @@ export function CaseStudy() {
 
                         <div className="space-y-4">
                             <div className="flex items-center gap-3">
-                                <CheckCircle2 className="text-blue-600 h-6 w-6 flex-shrink-0" />
+                                <CheckCircle2 className="text-blue-600 h-6 w-6 shrink-0" />
                                 <span className="font-semibold text-slate-900">Real-Time Analytics</span>
                             </div>
                             <p className="pl-9 text-sm text-slate-500">Instant visibility into millions of daily transactions.</p>
 
                             <div className="flex items-center gap-3">
-                                <CheckCircle2 className="text-blue-600 h-6 w-6 flex-shrink-0" />
+                                <CheckCircle2 className="text-blue-600 h-6 w-6 shrink-0" />
                                 <span className="font-semibold text-slate-900">Bank-Grade Security</span>
                             </div>
                             <p className="pl-9 text-sm text-slate-500">Encrypted end-to-end AED-256 cloud architecture.</p>

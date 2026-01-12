@@ -14,7 +14,7 @@ export function Hero() {
                     className="object-cover"
                     priority
                 />
-                <div className="absolute inset-0 bg-slate-900/70" />
+                <div className="absolute inset-0 bg-black/60" />
             </div>
 
             {/* Content */}
@@ -23,7 +23,7 @@ export function Hero() {
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white">
                         Building the Future <br /> of Software
                     </h1>
-                    <p className="text-lg md:text-xl text-slate-200">
+                    <p className="text-lg md:text-xl text-slate-200 max-w-lg">
                         Filia Studio transforms complex challenges into elegant digital solutions.
                         We engineer reliable systems designed for growth.
                     </p>

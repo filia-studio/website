@@ -1,6 +1,6 @@
-
-import Image from 'next/image'
-import { Button } from '@/components/ui/button'
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import Link from "next/link";
 
 export function Hero() {
     return (
@@ -24,16 +24,20 @@ export function Hero() {
                         Building the Future <br /> of Software
                     </h1>
                     <p className="text-lg md:text-xl text-slate-200 max-w-lg">
-                        Filia Studio transforms complex challenges into elegant digital solutions.
-                        We engineer reliable systems designed for growth.
+                        Filia Studio transforms complex challenges into elegant digital
+                        solutions. We engineer reliable systems designed for growth.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-base font-semibold">
-                            Work with us
+                        <Button
+                            asChild
+                            size="lg"
+                            className="bg-blue-600 hover:bg-blue-700 text-base font-semibold"
+                        >
+                            <Link href="/contact">Work with us</Link>
                         </Button>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }

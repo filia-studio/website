@@ -1,5 +1,9 @@
+"use client";
 
 import { Search, PencilRuler, Wrench, Rocket } from 'lucide-react'
+import { motion } from 'framer-motion'
+import { useInView } from 'framer-motion'
+import { useRef } from 'react'
 
 const steps = [
     {
@@ -29,16 +33,24 @@ const steps = [
 ]
 
 export function Methodology() {
+    const ref = useRef(null)
+    const isInView = useInView(ref, { once: true, margin: "-100px" })
+
     return (
-        <section id="methodology" className="py-24 bg-slate-50/50">
+        <section id="methodology" className="py-24 bg-slate-50/50" ref={ref}>
             <div className="container px-4 md:px-6 mx-auto">
-                <div className="text-center max-w-3xl mx-auto mb-16">
+                <motion.div
+                    className="text-center max-w-3xl mx-auto mb-16"
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
+                    transition={{ duration: 0.6 }}
+                >
                     <h2 className="text-blue-600 font-bold tracking-wide uppercase text-sm mb-2">Methodology</h2>
                     <h3 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">How We Work</h3>
                     <p className="text-slate-600 text-lg">
                         Our agile process ensures transparency and quality at every stage of the development lifecycle.
                     </p>
-                </div>
+                </motion.div>
 
                 <div className="max-w-3xl mx-auto">
                     <div className="relative">
@@ -47,12 +59,26 @@ export function Methodology() {
 
                         <div className="space-y-12">
                             {steps.map((step, index) => (
-                                <div key={index} className="relative flex gap-8 md:gap-12 group">
+                                <motion.div
+                                    key={index}
+                                    className="relative flex gap-8 md:gap-12 group"
+                                    initial={{ opacity: 0, x: -50 }}
+                                    animate={isInView ? { opacity: 1, x: 0 } : { opacity: 0, x: -50 }}
+                                    transition={{
+                                        duration: 0.6,
+                                        delay: index * 0.2,
+                                        ease: "easeOut"
+                                    }}
+                                >
                                     {/* Icon */}
                                     <div className="relative z-10 shrink-0">
-                                        <div className="flex h-16 w-16 md:h-24 md:w-24 items-center justify-center rounded-full border-2 border-blue-600 bg-white shadow-sm transition-transform group-hover:scale-105 duration-300">
+                                        <motion.div
+                                            className="flex h-16 w-16 md:h-24 md:w-24 items-center justify-center rounded-full border-2 border-blue-600 bg-white shadow-sm transition-transform group-hover:scale-105 duration-300"
+                                            whileHover={{ scale: 1.1 }}
+                                            transition={{ type: "spring", stiffness: 300 }}
+                                        >
                                             <step.icon className="h-6 w-6 md:h-10 md:w-10 text-blue-600" />
-                                        </div>
+                                        </motion.div>
                                     </div>
 
                                     {/* Content */}
@@ -67,7 +93,7 @@ export function Methodology() {
                                             {step.description}
                                         </p>
                                     </div>
-                                </div>
+                                </motion.div>
                             ))}
                         </div>
                     </div>

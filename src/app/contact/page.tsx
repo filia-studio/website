@@ -6,6 +6,26 @@ import { Label } from '@/components/ui/label'
 import { Textarea } from '@/components/ui/textarea'
 import { Mail, Phone, MapPin, Linkedin, Github, ChevronDown, Plus } from 'lucide-react'
 import Link from 'next/link'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    title: "Contact Us",
+    description: "Get in touch with Filia Studio. Let's discuss your project and how we can help transform your ideas into reality. Contact us via email, phone, or visit our office in Lagos.",
+    openGraph: {
+        title: "Contact Filia Studio",
+        description: "Get in touch with Filia Studio. Let's discuss your project and how we can help transform your ideas into reality.",
+        url: "https://withfillia.com/contact",
+        type: "website"
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Contact Filia Studio",
+        description: "Get in touch with Filia Studio. Let's discuss your project and how we can help transform your ideas into reality."
+    },
+    alternates: {
+        canonical: "/contact"
+    }
+}
 
 export default function ContactPage() {
     return (

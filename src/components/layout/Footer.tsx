@@ -3,6 +3,7 @@ import { ArrowUpRight, Github, Mail, Phone } from "lucide-react";
 
 const primaryLinks = [
     { label: "Home", href: "/" },
+    { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
 ];
 
@@ -21,34 +22,15 @@ const socialLinks = [
 
 export function Footer() {
     return (
-        <footer className="relative overflow-hidden bg-[#080808] px-4 py-16 text-white md:px-8 md:py-20">
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-136 w-136 -translate-x-1/2 -translate-y-1/2 rounded-full bg-white/10 blur-3xl" />
+        <footer className="relative overflow-hidden bg-[#0F1720] px-4 py-16 text-white md:px-8 md:py-20">
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#4E7A97]/20 blur-3xl" />
 
-            <div className="relative mx-auto max-w-370">
+            <div className="relative mx-auto max-w-[1480px]">
                 <div className="grid gap-14 lg:grid-cols-[1.1fr_1.35fr]">
                     <div>
                         <h2 className="max-w-3xl text-[clamp(2.5rem,4.8vw,5rem)] font-semibold leading-[0.95] tracking-normal">
                             Stay close to what Filia is building
                         </h2>
-
-                        <form className="mt-10 flex max-w-2xl items-center gap-3 rounded-full border border-white/72 px-5 py-3">
-                            <label htmlFor="footer-email" className="sr-only">
-                                Email address
-                            </label>
-                            <input
-                                id="footer-email"
-                                type="email"
-                                placeholder="Enter your email"
-                                className="h-12 min-w-0 flex-1 bg-transparent text-lg font-medium text-white outline-none placeholder:text-white/72"
-                            />
-                            <button
-                                type="submit"
-                                className="grid h-12 w-12 shrink-0 place-items-center rounded-full bg-white text-black transition hover:bg-[#e53238] hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#e53238] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080808]"
-                                aria-label="Subscribe to Filia Studio updates"
-                            >
-                                <ArrowUpRight className="h-5 w-5" />
-                            </button>
-                        </form>
 
                         <div className="mt-8 flex flex-wrap gap-3">
                             {socialLinks.map((item) => (
@@ -56,7 +38,7 @@ export function Footer() {
                                     key={item.label}
                                     href={item.href}
                                     aria-label={item.label}
-                                    className="inline-flex h-9 items-center gap-2 rounded-full bg-white/12 px-4 text-white transition hover:bg-[#e53238]"
+                                    className="inline-flex h-9 items-center gap-2 rounded-full bg-[#293241] px-4 text-white transition hover:bg-[#4E7A97]"
                                 >
                                     <item.icon className="h-4 w-4" />
                                     <ArrowUpRight className="h-4 w-4" />
@@ -65,19 +47,19 @@ export function Footer() {
                         </div>
                     </div>
 
-                    <div className="grid gap-10 md:grid-cols-2">
+                    <div className="grid min-w-0 gap-10 md:grid-cols-2">
                         {[primaryLinks, contactLinks].map((group, index) => (
                             <nav
                                 key={index}
-                                className="border-l border-white/12 pl-7"
+                                className="min-w-0 border-l border-white/12 pl-5 md:pl-7"
                                 aria-label={`Footer links ${index + 1}`}
                             >
                                 <ul className="space-y-5">
                                     {group.map((item) => (
-                                        <li key={item.label}>
+                                        <li key={item.label} className="min-w-0">
                                             <Link
                                                 href={item.href}
-                                                className="text-3xl font-medium leading-none text-white transition hover:text-[#e53238] md:text-4xl"
+                                                className="break-words text-xl font-medium leading-tight text-white transition hover:text-[#4E7A97] sm:text-2xl md:text-4xl md:leading-none"
                                             >
                                                 {item.label}
                                             </Link>

@@ -37,6 +37,14 @@ export const metadata: Metadata = {
   creator: "Filia Studio",
   publisher: "Filia Studio",
   metadataBase: new URL("https://withfillia.com"),
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo.png", type: "image/png" }
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/logo.png"
+  },
   alternates: {
     canonical: "/"
   },

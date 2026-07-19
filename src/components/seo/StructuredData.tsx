@@ -4,7 +4,7 @@ export function StructuredData() {
         "@type": "Organization",
         "name": "Filia Studio",
         "url": "https://withfillia.com",
-        "logo": "https://withfillia.com/logo.jpeg",
+        "logo": "https://withfillia.com/logo.png",
         "description": "Filia Studio designs and builds websites, mobile apps, web platforms, in-house products, and open source software.",
         "address": {
             "@type": "PostalAddress",
@@ -41,7 +41,7 @@ export function StructuredData() {
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Filia Studio",
-        "image": "https://withfillia.com/logo.jpeg",
+        "image": "https://withfillia.com/logo.png",
         "description": "Software development studio for websites, mobile apps, web platforms, in-house products, open source work, and cloud-backed systems.",
         "address": {
             "@type": "PostalAddress",

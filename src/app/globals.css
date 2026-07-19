@@ -31,33 +31,33 @@
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #0d0d0d;
+  --background: #F7F5F0;
+  --foreground: #0F1720;
 
   --card: #ffffff;
-  --card-foreground: #0d0d0d;
+  --card-foreground: #0F1720;
 
   --popover: #ffffff;
-  --popover-foreground: #0d0d0d;
+  --popover-foreground: #0F1720;
 
-  --primary: #e53238;
+  --primary: #4E7A97;
   --primary-foreground: #ffffff;
 
-  --secondary: #0d0d0d;
+  --secondary: #0F1720;
   --secondary-foreground: #ffffff;
 
-  --muted: #f6f3ef;
-  --muted-foreground: #68615c;
+  --muted: #DCE6EE;
+  --muted-foreground: #526171;
 
-  --accent: #e53238;
+  --accent: #4E7A97;
   --accent-foreground: #ffffff;
 
   --destructive: #ef4444;
   --destructive-foreground: #ffffff;
 
-  --border: #e5e5e5;
-  --input: #e5e5e5;
-  --ring: #e53238;
+  --border: #DCE6EE;
+  --input: #DCE6EE;
+  --ring: #4E7A97;
 
   --radius: 0.75rem;
 }
@@ -79,7 +79,7 @@
   }
 
   ::selection {
-    background: #e53238;
+    background: #4E7A97;
     color: #ffffff;
   }
 }
@@ -103,6 +103,16 @@
   display: inline-flex;
   min-width: max-content;
   animation: filia-marquee 30s linear infinite;
+}
+
+.hero-spotlight {
+  background:
+    radial-gradient(
+      420px circle at var(--pointer-x) var(--pointer-y),
+      rgba(220, 230, 238, 0.22),
+      rgba(78, 122, 151, 0.1) 38%,
+      transparent 72%
+    );
 }
 
 @media (prefers-reduced-motion: reduce) {

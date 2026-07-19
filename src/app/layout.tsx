@@ -3,22 +3,22 @@ import { Footer } from "@/components/layout/Footer";
 import { StructuredData } from "@/components/seo/StructuredData";
 
 import type { Metadata } from "next";
-import { Figtree } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 
-const figtree = Figtree({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-figtree",
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-outfit",
+  weight: ["300", "400", "500", "600", "700", "800"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: {
-    default: "Filia Studio | Building the Future of Software",
+    default: "Filia Studio | Digital Systems for Ambitious Companies",
     template: "%s | Filia Studio"
   },
-  description: "Filia Studio transforms complex challenges into elegant digital solutions. We engineer reliable systems designed for growth. Expert software development, web & mobile apps, UI/UX design, and cloud infrastructure.",
+  description: "Filia Studio designs and builds creative websites, mobile apps, web platforms, in-house products, and open source software for ambitious companies.",
   keywords: [
     "software development",
     "web development",
@@ -45,21 +45,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://withfillia.com",
     siteName: "Filia Studio",
-    title: "Filia Studio | Building the Future of Software",
-    description: "Filia Studio transforms complex challenges into elegant digital solutions. We engineer reliable systems designed for growth.",
+    title: "Filia Studio | Digital Systems for Ambitious Companies",
+    description: "Filia Studio designs and builds creative websites, mobile apps, web platforms, in-house products, and open source software.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Filia Studio - Building the Future of Software"
+        alt: "Filia Studio - Digital Systems for Ambitious Companies"
       }
     ]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Filia Studio | Building the Future of Software",
-    description: "Filia Studio transforms complex challenges into elegant digital solutions. We engineer reliable systems designed for growth.",
+    title: "Filia Studio | Digital Systems for Ambitious Companies",
+    description: "Filia Studio designs and builds creative websites, mobile apps, web platforms, in-house products, and open source software.",
     images: ["/og-image.png"],
     creator: "@filiastudio"
   },
@@ -84,7 +84,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${figtree.className} antialiased flex min-h-screen flex-col bg-white`}
+        className={`${outfit.className} antialiased flex min-h-screen flex-col bg-white`}
       >
         <StructuredData />
         <Header />

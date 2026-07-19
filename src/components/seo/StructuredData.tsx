@@ -5,7 +5,7 @@ export function StructuredData() {
         "name": "Filia Studio",
         "url": "https://withfillia.com",
         "logo": "https://withfillia.com/logo.jpeg",
-        "description": "Filia Studio transforms complex challenges into elegant digital solutions. We engineer reliable systems designed for growth.",
+        "description": "Filia Studio designs and builds websites, mobile apps, web platforms, in-house products, and open source software.",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "5 Balogun Close, Addo",
@@ -30,7 +30,7 @@ export function StructuredData() {
         "@type": "WebSite",
         "name": "Filia Studio",
         "url": "https://withfillia.com",
-        "description": "Building the Future of Software",
+        "description": "Serious software, shaped with taste.",
         "publisher": {
             "@type": "Organization",
             "name": "Filia Studio"
@@ -42,7 +42,7 @@ export function StructuredData() {
         "@type": "ProfessionalService",
         "name": "Filia Studio",
         "image": "https://withfillia.com/logo.jpeg",
-        "description": "Expert software development, web & mobile apps, UI/UX design, and cloud infrastructure services.",
+        "description": "Software development studio for websites, mobile apps, web platforms, in-house products, open source work, and cloud-backed systems.",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "5 Balogun Close, Addo",
@@ -60,7 +60,9 @@ export function StructuredData() {
             "Mobile App Development",
             "UI/UX Design",
             "Cloud Infrastructure",
-            "IT Consulting"
+            "IT Consulting",
+            "Open Source Software",
+            "In-House Software Products"
         ]
     };
 

@@ -1,5 +1,6 @@
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { NavigationScrollManager } from "@/components/layout/NavigationScrollManager";
 import { StructuredData } from "@/components/seo/StructuredData";
 
 import type { Metadata } from "next";
@@ -95,6 +96,7 @@ export default function RootLayout({
         className={`${outfit.className} antialiased flex min-h-screen flex-col bg-white`}
       >
         <StructuredData />
+        <NavigationScrollManager />
         <Header />
         <main className="flex-1">
           {children}

@@ -59,7 +59,7 @@ export function Footer() {
                                         <li key={item.label} className="min-w-0">
                                             <Link
                                                 href={item.href}
-                                                className="break-words text-xl font-medium leading-tight text-white transition hover:text-[#4E7A97] sm:text-2xl md:text-4xl md:leading-none"
+                                                className="wrap-break-word text-xl font-medium leading-tight text-white transition hover:text-[#4E7A97] sm:text-2xl"
                                             >
                                                 {item.label}
                                             </Link>
